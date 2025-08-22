@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Punto Deportivo la 28 - Fútbol</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        h1 {
+            background: linear-gradient(to right, #0087f6, #fd3f05);
+            color: white;
+            padding: 80px;
+            text-align: center;
+            border-radius: 20px;
+            font-style: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        .subtitulo {
+            text-align: center;
+            font-size: 2em;
+            margin-top: -40px;
+            margin-bottom: 30px;
+            font-style: italic;
+            color: #000000;
+        }
+        p {
+            font-style: italic;
+            color: #0031f5;
+            letter-spacing: 3px;
+            font-weight: 900;
+        }
+        h1  {
+            font-family: 'fantasy', Arial, sans-serif;
+            font-size: 3em;
+            font-weight: 900;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            text-align: center;
+            color: #000000;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Punto Deportivo la 28</h1>
+        <p>Viste tu pasión, juega con estilo</p>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="uniformes.html">Uniformes Completos</a>
+        <a href="uniformes_personalizados.html"> Uniformes Personalizados</a>
+        <a href="uniformes_ninos.html">Uniformes Niños</a>
+        <a href="accesorios.html">Accesorios</a>
+        <a href="Gorras.html">Gorras</a>
+    </nav>
+    <div class="container" id="bienvenida">
+        <h2>La identidad de tu equipo empieza aqui!</h2>
+        <p>Explora nuestras secciones y dale a tu equipo la imagen que merece.</p>
+    </div>
+    <div class="container" id="productos">
+        <h2>Productos Destacados</h2>
+        <div class="productos">
+            <div class="producto" data-nombre="Camiseta Colombia negra" data-precio="60">
+                <img src="imagenes/img_1col.jpeg" alt="Camiseta Colombia negra">
+                <h3>Camiseta Colombia negra</h3>
+                <p>$60.000 COP</p>
+                <button class="btn-comprar">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-nombre="camiseta Atletico Bucaramanga Retro " data-precio="60">
+                <img src="imagenes/img_hit1.jpeg" alt="camiseta Atletico Bucaramanga Retro">
+                <h3>Camiseta Atletico Bucaramnaga Retro</h3>
+                <p>$60.000 COP</p>
+                <button class="btn-comprar">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-nombre="camiseta colombia blanca" data-precio="60">
+                <img src="imagenes/img_2col.jpeg" alt="camiseta colombia blanca">
+                <h3>Camiseta Colombia Blanca</h3>
+                <p>$60.000 COP</p>
+                <button class="btn-comprar">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-nombre="Camiseta Atletico Bucaramanga Retro" data-precio="60">
+                <img src="imagenes/img_hit2.jpg" alt="Camiseta Atletico Bucaramanga Retro">
+                <h3>Camisa Atletico Bucaramanga</h3>
+                <p>$60.000 COP</p>
+                <button class="btn-comprar">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+    <div id="carrito">
+        <h3>Carrito de Compras</h3>
+        <ul id="lista-carrito"></ul>
+        <p id="total">Total: $0 COP</p>
+        <button class="btn-vaciar">Vaciar carrito</button>
+    </div>
+    <div class="container" id="contacto-ubicacion" style="margin-top:40px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center; align-items: flex-start;">
+            <!-- Contacto -->
+            <div style="flex: 1 1 320px; min-width: 320px; max-width: 400px;">
+                <h2>Contacto</h2>
+                <form id="form-contacto">
+                    <label>Nombre:<br><input type="text" name="nombre" required></label><br><br>
+                    <label>Email:<br><input type="email" name="email" required></label><br><br>
+                    <label>Mensaje:<br><textarea name="mensaje" rows="4" required></textarea></label><br><br>
+                    <button type="submit">Enviar</button>
+                </form>
+                <p id="mensaje-enviado" style="color:rgb(255, 0, 0);display:none;">¡Mensaje enviado! Nos pondremos en contacto pronto.</p>
+            </div>
+            <!-- Ubicación -->
+            <div style="flex: 1 1 320px; min-width: 320px; max-width: 500px;">
+                <h2>Ubicación</h2>
+                <div style="display: flex; justify-content: center;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.445338641293!2d-73.08984150000002!3d7.074254500000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683f03dbfb09a1%3A0x9bbd771e534c26ff!2sPunto%20Deportivo%20la%2028!5e0!3m2!1ses-419!2sco!4v1755706687452!5m2!1ses-419!2sco"
+                        width="100%"
+                        height="350"
+                        style="border:1px solid #00d9ff; border-radius:10px;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <!-- Redes Sociales -->
+            <div style="flex: 1 1 320px; min-width: 320px; max-width: 400px;">
+                <h2>Redes Sociales</h2>
+                <div style="display: flex; flex-direction: column; gap: 24px; align-items: center; margin-top: 24px;">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/puntodeportivo.la28?igsh=MW91aXcxdDJ1amlqdw%3D%3D&utm_source=qr" target="_blank" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width:40px; height:40px;">
+                        <span style="font-size: 1.2em; color: #E1306C;">Instagram</span>
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/message/L27XOBYU755PF1" target="_blank" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" style="width:40px; height:40px;">
+                        <span style="font-size: 1.2em; color: #004018;">WhatsApp</span>
+                    </a>
+                    <!-- Linktree -->
+                    <a href="https://linktr.ee/puntodeportivo.la28" target="_blank" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linktree.svg" alt="Linktree" style="width:40px; height:40px;">
+                        <span style="font-size: 1.2em; color: #044507;">Linktree</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="text-align:center; margin:40px 0 10px 0; color:#228B22;">
+        <p>&copy; 2025 PUNTO DEPORTIVO LA 28</p>
+    </footer>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
+
+
